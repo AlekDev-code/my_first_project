@@ -83,3 +83,20 @@ footer p {
         font-size: 28px;
     }
 }
+
+#skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#skills-list li {
+    background-color: #2a2a2a;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid #ff4500;
+    font-size: 14px;
+}
