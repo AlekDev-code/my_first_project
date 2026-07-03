@@ -11,6 +11,7 @@
 <body>
     <header>
         <h2>Портфолио | Алексей</h2>
+        <button id="theme-toggle" class="btn-secondary">Светлая тема</button>
     </header>
 
     <main>
@@ -19,12 +20,21 @@
                 <h1 id="main-title">Привет, я начинающий веб-разработчик</h1>
                 <p>Изучаю современные технологии, строю интерфейсы и автоматизирую процессы.</p>
                 <ul id="skills-list"></ul>
-            </div>
-            <div class="about-image">
-                <img src="cockpit.png" alt="Кокпит для симрейсинга">
-                <p id="click-counter" style="margin-top: 15px; color: #ff4500; font-weight: bold;">Вы кликнули накокпит:
-                    0 раз</p>
-            </div>
+                <div class="contact-container" style="margin-top: 30px;">
+                    <button id='contact-btn' class="btn-primary">
+                        Связаться со мной</button>
+                    <p id="email-display"
+                        style="display:none; margin-top: 15px; font-size: 18px; color: #00ff7f; font-weight: bold;">Моя
+                        почта: artamonovalexey.k@gmail.com</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-bg-wrapper">
+                        <img src="cockpit.png" alt="Кокпит для симрейсинга">
+                    </div>
+                    <p id="click-counter" style="margin-top: 15px; color: #ff4500; font-weight: bold;">Вы кликнули
+                        накокпит:
+                        0 раз</p>
+                </div>
         </section>
     </main>
 

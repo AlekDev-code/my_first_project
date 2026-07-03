@@ -60,12 +60,14 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.about_image img {
-    max-width: 100%;
+.about-image img {
+    max-width: 85%;
     height: auto;
     border-radius: 12px;
+    display: block;
 }
 
 footer {
@@ -107,4 +109,91 @@ footer p {
     border-radius: 20px;
     border: 1px solid #ff4500;
     font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #e03d00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ff4500;
+    border: 2px solid #ff4500;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn--secondary:hover {
+    background-color: #ff4500;
+    color: #ffffff;
+}
+
+.image-bg-wrapper {
+    background: linear-gradient(135deg, #232323 0%, #151515 100%);
+    padding: 30px;
+    border-radius: 24px;
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #1a1a1e;
+}
+
+body.light-theme header,
+body.light-theme footer {
+    background-color: #ffffff;
+    color: #dddddd;
+}
+
+body.light-theme .image-bg-wrapper {
+    background: linear-gradient(135deg, #ffffff 0%, #e6e6e6 100%);
+    border-color: #dcdcdc;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme #skills-list li {
+    background-color: #ffffff;
+    color: #1a1a1e;
+    border-color: #ff4500;
+}
+
+body.light-theme .about-text p {
+    color: #555555;
+}
+
+.contact-container {
+    margin-top: 40px;
+    display: block;
 }

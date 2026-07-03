@@ -20,9 +20,27 @@ mySkills.forEach(function (skill) {
    skillsList.appendChild(newli);
 });
 let clickCount = 0;
-const cockpitImg = document.querySelector('.about-image img');
+const cockpitImg = document.querySelector('.image-bg-wrapper img');
 const counterText = document.querySelector('#click-counter');
 cockpitImg.addEventListener('click', function () {
    clickCount = clickCount + 1;
    counterText.textContent = "Вы кликнули на кокпит: " + clickCount + " раз";
+});
+const contactBtn = document.querySelector('#contact-btn');
+const emailDisplay = document.querySelector('#email-display');
+contactBtn.addEventListener('click', function () {
+   if (emailDisplay.style.display == 'none') {
+      emailDisplay.style.display = 'block';
+   } else {
+      emailDisplay.style.display = 'none';
+   }
+});
+const themeToggleBtn = document.querySelector('#theme-toggle');
+themeToggleBtn.addEventListener('click', function () {
+   document.body.classList.toggle('light-theme');
+   if (document.body.classList.contains('light-theme')) {
+      themeToggleBtn.textContent = 'Темная тема';
+   } else {
+      themeToggleBtn.textContent = 'Светлая тема';
+   }
 });
