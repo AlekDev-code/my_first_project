@@ -19,3 +19,10 @@ mySkills.forEach(function (skill) {
    newli.textContent = skill;
    skillsList.appendChild(newli);
 });
+let clickCount = 0;
+const cockpitImg = document.querySelector('.about-image img');
+const counterText = document.querySelector('#click-counter');
+cockpitImg.addEventListener('click', function () {
+   clickCount = clickCount + 1;
+   counterText.textContent = "Вы кликнули на кокпит: " + clickCount + " раз";
+});
